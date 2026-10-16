@@ -136,7 +136,7 @@ jobs:
         uses: sigstore/cosign-installer@v3
 
        ⚠️ Usa o Cosign para validar assinatura do artefato - descomentar após assinatura
-       - name: 🔎 Verificar assinatura do artefato
+      - name: 🔎 Verificar assinatura do artefato
         run: |
           cosign verify-blob artifact.tar \
             --bundle artifact.sigstore.json \
